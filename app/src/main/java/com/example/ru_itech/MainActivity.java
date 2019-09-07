@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         myItems.add(new RecyclerStructure(R.drawable.testimage,"test description","12.3.2019","Nairobi"));
         myItems.add(new RecyclerStructure(R.drawable.testimage,"test description","12.3.2019","Nairobi"));
         myItems.add(new RecyclerStructure(R.drawable.testimage,"test description","12.3.2019","Nairobi"));
+        myItems.add(new RecyclerStructure(R.drawable.testimage,"test description","12.3.2019","Nairobi"));
 
 
         RecyclerAdapter adapter = new RecyclerAdapter(this,myItems);

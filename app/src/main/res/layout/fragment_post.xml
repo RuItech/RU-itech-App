@@ -14,6 +14,20 @@
         android:orientation="vertical">
 
 
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="post"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="0dp"
@@ -36,16 +50,13 @@
                 app:layout_constraintStart_toStartOf="parent">
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center" />
+
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:elevation="4dp">
+                    app:cardElevation="4dp">
 
 
                     <LinearLayout
@@ -92,59 +103,36 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="12dp"
-                        app:cardCornerRadius="30dp">
 
-                        <androidx.appcompat.widget.AppCompatImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/image" />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        app:elevation="4dp"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/video"
+                        android:layout_height="wrap_content"/>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        app:elevation="4dp"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/pdf"
+                        android:layout_height="wrap_content"/>
 
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="12dp"
-                        android:layout_marginTop="15dp"
-                        app:cardCornerRadius="30dp">
-
-                        <androidx.appcompat.widget.AppCompatImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/video" />
-
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="12dp"
-                        android:layout_marginTop="15dp"
-                        app:cardCornerRadius="25dp">
-
-                        <androidx.appcompat.widget.AppCompatImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/pdf" />
-
-
-                    </androidx.cardview.widget.CardView>
-
-
-                    <Button
-                        android:layout_width="80dp"
-                        android:layout_height="50dp"
-                        android:background="#1874E6"
-                        android:text="post"
-                        android:textColor="@android:color/white" />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        app:elevation="4dp"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/image"
+                        android:layout_height="wrap_content"/>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        app:elevation="4dp"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/post"
+                        android:layout_height="wrap_content"/>
 
 
                 </LinearLayout>
@@ -158,7 +146,6 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/testimage"
                     android:scaleType="centerInside"/>
 
             </LinearLayout>
