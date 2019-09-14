@@ -110,4 +110,6 @@
     <string name="sign_in">SIGN IN</string>
     <string name="dont_have_an_account">DONT HAVE AN ACCOUNT?</string>
     <string name="sign_up">SIGN UP</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="sign_in_text">Sign In</string>
 </resources>
