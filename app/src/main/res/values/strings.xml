@@ -99,4 +99,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="notification">This is a sample notification of the ru itech app This is a sample notification description of the ru itech app</string>
+    <string name="ru_itech">Ru Itech</string>
+    <string name="todo">TODO</string>
+    <string name="log_in">Log in</string>
+    <string name="forget_your_password">Forget your Password?</string>
+    <string name="enter_your_credentials">Enter Your Credentials</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="dont_have_an_account">DONT HAVE AN ACCOUNT?</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="sign_in_text">Sign In</string>
 </resources>

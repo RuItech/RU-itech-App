@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".SignUp"></activity>
+        <activity android:name=".Login" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,9 +23,7 @@
         <activity android:name=".Profile" />
         <activity
             android:name=".MainPage"
-            android:label="@string/title_activity_main_page">
-
-        </activity>
+            android:label="@string/title_activity_main_page" />
         <activity
             android:name=".viewMore"
             android:label="@string/title_activity_view_more"
