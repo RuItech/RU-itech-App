@@ -22,13 +22,7 @@ public class Login extends AppCompatActivity {
 
 
     }
-    public void sign_up_link(View View)
-    {
-        startActivity(new Intent(Login.this, SignUp.class));
 
-
-
-    }
 
 
 }

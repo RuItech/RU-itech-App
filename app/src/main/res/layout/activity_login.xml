@@ -142,28 +142,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="178dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/dont_have_an_account"
-        android:textColor="#000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
 
-    <TextView
-        android:id="@+id/sign_up"
-        android:layout_width="124dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="236dp"
-        android:layout_marginLeft="236dp"
-        android:layout_marginTop="32dp"
-        android:onClick="sign_up_link"
-        android:text="@string/sign_up"
-        android:textColor="#007FFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
