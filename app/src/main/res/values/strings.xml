@@ -112,4 +112,7 @@
     <string name="sign_up">SIGN UP</string>
     <string name="sign_up_text">Sign Up</string>
     <string name="sign_in_text">Sign In</string>
+    <string name="already_have_an_account">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="sign_up_link">SIGN UP</string>
+    <string name="sign_in_link">SIGN IN</string>
 </resources>
