@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile"
         android:layout_marginStart="104dp"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"/>
 
     <TextView
         android:id="@+id/textView2"
