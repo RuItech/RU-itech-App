@@ -29,37 +29,14 @@ public class Login extends AppCompatActivity {
     private static final int MY_REQUEST_CODE = 7117;
     List<AuthUI.IdpConfig> providers;
 
-    Button btn_sign_out;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-//        btn_sign_out = (Button)findViewById(R.id.btn_sign_out);
-//        btn_sign_out.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view)
-//            {
-//                AuthUI.getInstance().signOut(Login.this).addOnCompleteListener(new OnCompleteListener<Void>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<Void> task)
-//                    {
-//                        btn_sign_out.setEnabled(false);
-//                        showSignInOptions();
 //
-//                    }
-//                }).addOnFailureListener(new OnFailureListener() {
-//                    @Override
-//                    public void onFailure(@NonNull Exception e)
-//                    {
-//                        Toast.makeText(Login.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
-//
-//                    }
-//                });
-//
-//            }
-//        });
 
         providers = Arrays.asList(
                 new AuthUI.IdpConfig.EmailBuilder().build(),
@@ -77,8 +54,7 @@ public class Login extends AppCompatActivity {
         startActivityForResult(
                 AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(providers).setTheme(R.style.MyTheme).build(),MY_REQUEST_CODE
         );
-        Intent i = new Intent(Login.this,MainPage.class);
-        startActivity(i);
+
     }
 
 
@@ -96,6 +72,8 @@ public class Login extends AppCompatActivity {
                 Toast.makeText(this, ""+user.getEmail(), Toast.LENGTH_SHORT).show();
 
 //                btn_sign_out.setEnabled(true);
+                Intent i = new Intent(Login.this,MainPage.class);
+                startActivity(i);
             }
 
             else
@@ -105,6 +83,7 @@ public class Login extends AppCompatActivity {
             }
 
         }
+
 
     }
 
